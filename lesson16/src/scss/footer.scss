@@ -1,0 +1,18 @@
+.container {
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    .block {
+        display: flex;
+        flex-basis: 25%-1.25%;
+        margin-right: 15px;
+        height: 100px;
+        background: red;
+         :nth-child(4n) {
+            margin-right: 0;
+        }
+        @media(max-width: 1100px) {
+            flex-basis: (100%/3- 15px);
+        }
+    }
+}
