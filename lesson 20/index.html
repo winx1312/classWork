@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    .main {
+        background: black;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 4fr 1fr 1fr 1fr 1fr;
+        width: 400px;
+        height: 600px;
+    }
+    
+    .main__high {
+        background: black;
+        grid-column: 1/-1;
+        color: white;
+    }
+    
+    .button {
+        grid-gap: 1px;
+        font-size: 23px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: gray;
+    }
+</style>
+
+<body>
+    <div class="main">
+        <div class="main__high"></div>
+        <button class="main__content__button-1">1</button>
+        <button class="main__content__button-2">2</button>
+        <button class="main__content__button-3">3</button>
+        <button class="main__content__button-4">+</button>
+        <button class="main__content__button-5">4</button>
+        <button class="main__content__button-6">5</button>
+        <button class="main__content__button-7">6</button>
+        <button class="main__content__button-8">-</button>
+        <button class="main__content__button-9">7</button>
+        <button class="main__content__button-10">8</button>
+        <button class="main__content__button-11">9</button>
+        <button class="main__content__button-12">/</button>
+        <button class="main__content__button-13">0</button>
+        <button class="main__content__button-14">C</button>
+        <button class="main__content__button-15">=</button>
+        <button class="main__content__button-16">*</button>
+    </div>
+    <script>
+        const area = document.querySelector('.main__high')
+        document.querySelectorAll('button').forEach(items => {
+            items.addEventListener('click', handleclick)
+        })
+
+        function handleclick() {
+            switch (this.innerHTML) {
+                case 'C':
+                    area.innerHTML = " ";
+                    break;
+                case '=':
+                    area.innerHTML = eval(area.innerHTML);
+                    break;
+                case '+':
+                case '-':
+                case '/':
+                case '*':
+                    const currentDisplayValue = area.innerHTML.slice(-1);
+                    if (lastChar === '+' || lastChar === '-' || lastChar === '*' || lastChar === '/') {
+                        break;
+                    }
+                default:
+                    area.innerHTML += this.innerHTML;
+                    break;
+
+            }
+        }
+    </script>
+
+</body>
+
+</html>
