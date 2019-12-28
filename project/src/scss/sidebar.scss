@@ -1,0 +1,16 @@
+.sidebar {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    max-width: 195px;
+    &__text {
+        color: #bcc2c4;
+        font-family: Circe;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 30px;
+    }
+    img {
+        transform: rotate(60deg);
+    }
+}
