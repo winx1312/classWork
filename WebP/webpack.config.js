@@ -3,7 +3,7 @@ const HTMLPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require("mini-css-extract-plugin")
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin')
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
-
+const CopyPlugin = require('copy-webpack-plugin');
 module.exports = {
     entry: './src/index.js',
     output: {
@@ -27,7 +27,10 @@ module.exports = {
         }),
         new MiniCssExtractPlugin({
             filename: 'style.css'
-        })
+        }),
+        new CopyPlugin([
+            { from: 'img', to: 'img' },
+        ]),
     ],
     module: {
         rules: [{
@@ -37,6 +40,14 @@ module.exports = {
             {
                 test: /\.scss$/,
                 use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader']
+            },
+            {
+                test: /\.(gif|png|jpe?g|svg)$/i,
+                use: [
+                    'file-loader',
+                    'image-webpack-loader',
+                ]
+
             },
             {
                 test: /\.js$/,
