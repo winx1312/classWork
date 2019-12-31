@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #1f2326;
+    .arrow {
+        position: fixed;
+        z-index: 90;
+        bottom: 27px;
+        right: 27px;
+        width: 94px;
+        height: 167px;
+        // background-image: url('../img/arrow.svg');
+        cursor: pointer;
+    }
+    .header {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        &__logo-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-height: 200px;
+        }
+    }
+}
