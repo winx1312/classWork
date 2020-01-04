@@ -1,2 +1,3 @@
-import "../sass/index.scss"
-import "./arrow"
+import "../sass/index.scss";
+import "./arrow";
+import "./glass"

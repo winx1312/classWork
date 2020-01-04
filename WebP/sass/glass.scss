@@ -1,0 +1,72 @@
+.glass {
+    margin-top: 200px;
+    background-image: url('../img/sect-bg.jpg');
+    padding-top: 230px;
+    width: 100%;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        &__animate {
+            &__helmet {
+                position: absolute;
+                max-width: 504px;
+                max-height: 623px;
+                box-shadow: -1px 37px 131px 16px rgba(12, 13, 15, 0.55);
+                opacity: 1;
+            }
+            &__visor {
+                position: relative;
+                min-width: 220px;
+                max-height: 180px;
+                bottom: -101px;
+                right: -53px;
+            }
+        }
+        .glass__block {
+            max-width: 624px;
+            max-height: 283px;
+            display: flex;
+            flex-direction: column;
+            &__heading {
+                color: #dc1a1a;
+                font-family: "Kaushan Script";
+                font-size: 36px;
+                font-weight: 400;
+                font-style: italic;
+            }
+            &__main {
+                color: #ffffff;
+                font-family: "Russo One";
+                font-size: 48px;
+                font-weight: 400;
+                font-style: italic;
+            }
+            &__text {
+                color: #7c8c9b;
+                font-family: "Muller Light";
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 30px;
+            }
+            &__podtext {
+                position: relative;
+                color: #dc1a1a;
+                font-family: "Muller Regular";
+                font-size: 16px;
+                font-weight: 400;
+                font-style: italic;
+                line-height: 30px;
+                align-self: center;
+                 ::before {
+                    content: '';
+                    position: absolute;
+                    left: 60px;
+                    width: 54px;
+                    height: 46px;
+                    background-image: url('../img/show.svg');
+                    background-size: cover
+                }
+            }
+        }
+    }
+}

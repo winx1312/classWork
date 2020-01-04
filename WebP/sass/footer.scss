@@ -1,8 +1,7 @@
         .footer {
-            padding-top: 500px;
-            padding-bottom: 160px;
+            padding-top: 200px;
+            width: 100%;
             background-image: url("../img/footer-bg.png");
-            background-size: cover;
             &__wrapper {
                 display: flex;
                 justify-content: space-between;
@@ -86,10 +85,13 @@
                     line-height: 18px;
                     margin-bottom: 14px;
                 }
-                &__img {
-                    max-width: 251px;
-                    max-height: 41px;
-                    opacity: 0.11;
+                &__wrapper {
+                    display: flex;
+                    &-item {
+                        margin-right: 15px;
+                        height: 35px;
+                        opacity: .12;
+                    }
                 }
             }
         }

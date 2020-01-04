@@ -30,12 +30,13 @@ module.exports = {
         }),
         new CopyPlugin([
             { from: 'img', to: 'img' },
+            { from: 'Fonts', to: 'Fonts' },
         ]),
     ],
     module: {
         rules: [{
                 test: /\.scss$/,
-                use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader']
+                use: [MiniCssExtractPlugin.loader, 'css-loader?url=false', 'sass-loader']
             },
             {
                 test: /\.(gif|png|jpe?g|svg)$/i,

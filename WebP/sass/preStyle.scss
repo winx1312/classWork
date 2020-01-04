@@ -1,0 +1,46 @@
+.preStyle {
+    display: flex;
+    width: 100%;
+    margin-bottom: 260px;
+    &__block {
+        top: 265px;
+        position: relative;
+        padding-left: 720px;
+        display: flex;
+        flex-direction: column;
+        &__heading {
+            color: #dc1a1a;
+            font-family: "Kaushan Script";
+            font-size: 36px;
+            font-weight: 400;
+            margin-bottom: 0;
+        }
+        &__main {
+            color: #ffffff;
+            font-family: "Russo One";
+            font-size: 48px;
+            font-weight: 400;
+            font-style: italic;
+            margin-top: 29px;
+            margin-bottom: 24px;
+             ::before {
+                content: '';
+                position: absolute;
+                left: -69px;
+                top: 4px;
+                width: 33px;
+                height: 64px;
+                background: url('../img/bal.svg');
+                background-size: cover;
+                transform: rotate(30deg);
+            }
+        }
+        &__text {
+            color: #7c8c9b;
+            font-family: "Muller Light";
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 30px;
+        }
+    }
+}
