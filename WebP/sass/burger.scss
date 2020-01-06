@@ -22,6 +22,7 @@ $var2: #ffffff;
         height: 5px;
         transform: rotate(-45deg);
         overflow: hidden;
+        animation: side-1;
         &:after,
         &:before {
             content: '';
@@ -52,6 +53,7 @@ $var2: #ffffff;
         height: 5px;
         transform: rotate(-45deg);
         overflow: hidden;
+        animation: center-1;
         .helper,
         &:after,
         &:before {
@@ -73,4 +75,73 @@ $var2: #ffffff;
             transform: translate(-15%, 10%);
         }
     }
+}
+
+@keyframes side-1 {
+    from {
+        transform: translate(0, 0)
+    }
+    to {
+        transform: translate(-140%, 10%)
+    }
+}
+
+@keyframes side-2 {
+    from {
+        -webkit-transform: translate(140%, 10%);
+        transform: translate(140%, 10%)
+    }
+    to {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0)
+    }
+}
+
+@keyframes center-1 {
+    from {
+        transform: translate(115%, 10%)
+    }
+    to {
+        transform: translate(-15%, 10%)
+    }
+}
+
+@keyframes center-2 {
+    from {
+        -webkit-transform: translate(-15%, 10%);
+        transform: translate(-15%, 10%)
+    }
+    to {
+        -webkit-transform: translate(-145%, 10%);
+        transform: translate(-145%, 10%)
+    }
+}
+
+@keyframes center-3 {
+    from {
+        transform: translate(245%, 10%)
+    }
+    to {
+        transform: translate(115%, 10%)
+    }
+}
+
+.burger:hover .burger__side:before {
+    animation: side-1 linear infinite .4s
+}
+
+.burger:hover .burger__side:after {
+    animation: side-2 linear infinite .4s
+}
+
+.burger:hover .burger-center:before {
+    animation: center-1 linear infinite .4s
+}
+
+.burger:hover .burger-center:after {
+    animation: center-2 linear infinite .4s
+}
+
+.burger:hover .helper {
+    animation: center-3 linear infinite .4s
 }
