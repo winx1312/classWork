@@ -10,7 +10,7 @@
         flex-direction: column;
         &__heading {
             color: #dc1a1a;
-            font-family: "Kaushan Script";
+            font-family: Kaushan Script;
             font-size: 36px;
             font-weight: 400;
             margin-bottom: 0;
@@ -26,8 +26,6 @@
              ::before {
                 content: '';
                 position: absolute;
-                left: -69px;
-                top: 4px;
                 width: 33px;
                 height: 64px;
                 background: url('../img/bal.svg');
