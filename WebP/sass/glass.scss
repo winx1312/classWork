@@ -3,6 +3,7 @@
     background-image: url('../img/sect-bg.jpg');
     padding-top: 230px;
     width: 100%;
+    height: 100vh;
     &__wrapper {
         display: flex;
         justify-content: space-between;
@@ -57,10 +58,10 @@
                 font-style: italic;
                 line-height: 30px;
                 align-self: center;
-                 ::before {
+                &::before {
                     content: '';
                     position: absolute;
-                    left: 60px;
+                    left: -90px;
                     width: 54px;
                     height: 46px;
                     background-image: url('../img/show.svg');
@@ -68,5 +69,20 @@
                 }
             }
         }
+    }
+}
+
+.glass-animate {
+    animation: vlet .7s;
+}
+
+@keyframes vlet {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
     }
 }

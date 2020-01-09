@@ -1,7 +1,9 @@
 .preStyle {
     display: flex;
     width: 100%;
-    margin-bottom: 260px;
+    height: 100vh;
+    margin-top: 180px;
+    margin-bottom: 90px;
     &__block {
         top: 265px;
         position: relative;
@@ -10,7 +12,7 @@
         flex-direction: column;
         &__heading {
             color: #dc1a1a;
-            font-family: Kaushan Script;
+            font-family: "Kaushan Script";
             font-size: 36px;
             font-weight: 400;
             margin-bottom: 0;
@@ -23,14 +25,16 @@
             font-style: italic;
             margin-top: 29px;
             margin-bottom: 24px;
-             ::before {
+            &::before {
                 content: '';
                 position: absolute;
+                left: 641px;
                 width: 33px;
                 height: 64px;
-                background: url('../img/bal.svg');
+                background: url('../img/spray\ .svg');
                 background-size: cover;
                 transform: rotate(30deg);
+                right: 324px;
             }
         }
         &__text {

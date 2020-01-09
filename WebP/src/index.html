@@ -53,27 +53,32 @@
             </div>
     </section>
     <section class="style">
-        <div class="container style">
+        <div class="container container__style">
             <div class="style__wrapper">
                 <div class="const" id="const">
-                    <img src="../img/helmet_green.png" alt="helmet" class="const__helmet hel-1" id="hel-1">
+                    <img src="../img/helmet_white.png" alt="helmet" class="const__helmet hel-2 hide" id="hel-w">
+                    <img src="../img/helmet_matte.png" alt="helmet" class="const__helmet hel-3 hide" id="hel-m">
+                    <img src="../img/helmet_green.png" alt="helmet" class="const__helmet hel-1" id="hel-g">
                     <img src="../img/visor-1.png" alt="visor" class="const__visors v-1 " id="v-1">
-                    <img src="../img/visor-2.png" alt="visor" class="const__visors v-2">
-                    <img src="../img/visor-3.png" alt="visor" class="const__visors v-3">
-                    <img src="../img/visor-4.png" alt="visor" class="const__visors v-4">
-                    <img src="../img/visor-5.png" alt="visor" class="const__visors v-5">
-                    <img src="../img/visor-6.png" alt="visor" class="const__visors v-6">
-                    <img src="../img/holder_1.png" alt="holder" class="const__holder h-1">
-                    <img src="../img/holder_3.png" alt="holder" class="const__holder h-3">
-                    <img src="../img/holder_4.png" alt="holder" class="const__holder h-4">
-                    <img src="../img/holder_5.png" alt="holder" class="const__holder h-5">
+                    <img src="../img/visor-2.png" alt="visor" class="const__visors v-2" id="v-2">
+                    <img src="../img/visor-3.png" alt="visor" class="const__visors v-3" id="v-3">
+                    <img src="../img/visor-4.png" alt="visor" class="const__visors v-4" id="v-4">
+                    <img src="../img/visor-5.png" alt="visor" class="const__visors v-5" id="v-5">
+                    <img src="../img/visor-6.png" alt="visor" class="const__visors v-6" id="v-6">
+                    <img src="../img/holder_1.png" alt="holder" class="const__holder h-1" id="h-1">
+                    <img src="../img/holder_2.png" alt="holder" class="const__holder h-2 hide" id="h-2">
+                    <img src="../img/holder_3.png" alt="holder" class="const__holder h-3" id="h-3">
+                    <img src="../img/holder_4.png" alt="holder" class="const__holder h-4 " id="h-4">
+                    <img src="../img/holder_5.png" alt="holder" class="const__holder h-5 hide" id="h-5">
+                    <img src="../img/holder_6.png" alt="holder" class="const__holder h-6 hide" id="h-6">
+                    <img src="../img/holder_7.png" alt="holder" class="const__holder h-7 hide" id="h-7">
                 </div>
                 <div class="style__but">
                     <h2 class="style__heading">Your style</h2>
                     <ul class="style__list">
-                        <li class="style__list-link">Helmet:.................................Army green</li>
-                        <li class="style__list-link">Visor:.....................Chamaeleon Iridium</li>
-                        <li class="style__list-link">Visor holders:...................................Gold</li>
+                        <li class="style__list-link">Helmet:................................. <span class="style-color" id="color-1"> Army green</span></li>
+                        <li class="style__list-link">Visor:.....................<span class="style-color" id="color-2">Chamaeleon Iridium</li></span>
+                            <li class="style__list-link">Visor holders:...................................<span class="style-color" id="color-3">Gold</span></li>
                     </ul>
                     <span class="style__price">£ 229.99</span>
                     <button class="style__button button">BUY</button>
@@ -84,18 +89,18 @@
                 <div class="style__opt-wrapper">
                     <div class="style__opt-heading">Helmet colour</div>
                     <div class="style__opt-list">
-                        <div class="style__opt-item" id="helmets">
-                            <img src="../img/helmet_matte.png" alt="Helmet" class="style__opt-img-hel style__opt-img">
-                            <div class="style__opt-name">Matte Black</div>
+                        <div class="style__opt-item">
+                            <img src="../img/helmet_matte.png" alt="Helmet" class="style__opt-img-hel style__opt-img" id="t-hel-m">
+                            <div class="style__opt-name" id="hel-text-1"> Matte Black</div>
                         </div>
                         <div class="style__opt-item ">
-                            <img src="../img/helmet_green.png" alt="Helmet colour green" class="style__opt-img-hel style__opt-img">
-                            <div class="style__opt-name">Army green</div>
+                            <img src="../img/helmet_green.png" alt="Helmet colour green" class="style__opt-img-hel style__opt-img" id="t-hel-g">
+                            <div class="style__opt-name" id="hel-text-2">Army green</div>
                             <div class="style__opt-coming">Coming<br> soon</div>
                         </div>
                         <div class="style__opt-item">
-                            <img src="../img/helmet_white.png" alt="Helmet colour white" class="style__opt-img-hel style__opt-img">
-                            <div class="style__opt-name">Brilliant white</div>
+                            <img src="../img/helmet_white.png" alt="Helmet colour white" class="style__opt-img-hel style__opt-img" id="t-hel-w">
+                            <div class="style__opt-name" id="hel-text-3">Brilliant white</div>
                         </div>
 
                     </div>
@@ -105,24 +110,24 @@
                     <div class="style__opt-list">
                         <div class="style__opt-item " id="visors">
                             <img src="../img/visor-1.png" alt="visor" class=" style__opt-img-v style__opt-img">
-                            <div class="style__opt-name">Menacing Tint</div>
+                            <div class="style__opt-name" id="v-text-1">Menacing Tint</div>
                         </div>
                         <div class="style__opt-item "> <img src="../img/visor-2.png" alt="visor" class="style__opt-img-v style__opt-img">
-                            <div class="style__opt-name">Chamaelon iridium</div>
+                            <div class="style__opt-name" id="v-text-2">Chamaelon iridium</div>
                         </div>
                         <div class="style__opt-item "> <img src="../img/visor-3.png" alt="visor" class="style__opt-img-v style__opt-img">
-                            <div class="style__opt-name">Mirror Chrome</div>
+                            <div class="style__opt-name" id="v-text-3">Mirror Chrome</div>
                         </div>
                         <div class="style__opt-item style__opt-item_visor"> <img src="../img/visor-4.png" alt="visor" class="style__opt-img-v style__opt-img">
-                            <div class="style__opt-name">Origin red</div>
+                            <div class="style__opt-name" id="v-text-4">Origin red</div>
                             <div class="style__opt-coming">Coming<br> soon</div>
                         </div>
                         <div class="style__opt-item "> <img src="../img/visor-5.png" alt="visor" class="style__opt-img-v style__opt-img">
-                            <div class="style__opt-name">Gold</div>
+                            <div class="style__opt-name" id="v-text-5">Gold</div>
                             <div class="style__opt-coming">Coming<br> soon</div>
                         </div>
                         <div class="style__opt-item "> <img src="../img/visor-6.png" alt="visor" class="style__opt-img-v style__opt-img">
-                            <div class="style__opt-name">Crystal Clear</div>
+                            <div class="style__opt-name" id="v-text-6">Crystal Clear</div>
                         </div>
                     </div>
                 </div>
@@ -130,26 +135,26 @@
                     <div class="style__opt-heading">Visour holders colour</div>
                     <div class="style__opt-list">
                         <div class="style__opt-item "> <img src="../img/holder_1.png" alt="holder" class="style__opt-img-h style__opt-img">
-                            <div class="style__opt-name style__opt-name_holder">Green</div>
+                            <div class="style__opt-name style__opt-name_holder " id="h-text-1">Green</div>
                         </div>
                         <div class="style__opt-item "> <img src="../img/holder_2.png" alt="holder" class="style__opt-img-h style__opt-img">
-                            <div class="style__opt-name style__opt-name_holder">Gold</div>
+                            <div class="style__opt-name style__opt-name_holder" id="h-text-2">Gold</div>
                         </div>
                         <div class="style__opt-item "> <img src="../img/holder_3.png" alt="holder" class="style__opt-img-h style__opt-img">
-                            <div class="style__opt-name style__opt-name_holder">Iridium</div>
+                            <div class="style__opt-name style__opt-name_holder" id="h-text-3">Iridium</div>
                             <div class="style__opt-coming">Coming<br> soon</div>
                         </div>
                         <div class="style__opt-item "> <img src="../img/holder_4.png" alt="holder" class="style__opt-img-h style__opt-img">
-                            <div class="style__opt-name style__opt-name_holder">Blue</div>
+                            <div class="style__opt-name style__opt-name_holder" id="h-text-4">Blue</div>
                         </div>
                         <div class="style__opt-item "> <img src="../img/holder_5.png" alt="holder" class=" style__opt-img-h style__opt-img">
-                            <div class="style__opt-name style__opt-name_holder">Chrome</div>
+                            <div class="style__opt-name style__opt-name_holder" id="h-text-5">Chrome</div>
                         </div>
                         <div class="style__opt-item "> <img src="../img/holder_6.png" alt="holder" class="style__opt-img-h style__opt-img">
-                            <div class="style__opt-name style__opt-name_holder">Red</div>
+                            <div class="style__opt-name style__opt-name_holder" id="h-text-6">Red</div>
                         </div>
                         <div class="style__opt-item "> <img src="../img/holder_7.png" alt="holder" class=" style__opt-img-h style__opt-img">
-                            <div class="style__opt-name style__opt-name_holder">Black</div>
+                            <div class="style__opt-name style__opt-name_holder" id="h-text-7">Black</div>
                         </div>
                     </div>
                 </div>
@@ -160,8 +165,8 @@
     <section class="glass">
         <div class="container">
             <div class="glass__wrapper">
-                <div class="glass__wrapper__animate"><img src="../img/helmet-r.png" alt="helmet" class="glass__wrapper__animate__helmet ">
-                    <img src="../img/visor-light.png" alt="visor-light" class="glass__wrapper__animate__visor " id="visorLight"></div>
+                <div class="glass__wrapper__animate"><img src="../img/helmet-r.png" alt="helmet" class="glass__wrapper__animate__helmet " id="wrapA">
+                    <img src="../img/visor-light.png" alt="visor-light" class="glass__wrapper__animate__visor" id="visorLight"></div>
                 <div class="glass__block">
                     <h2 class="glass__block__heading">Hardwearing</h2>
                     <p class="glass__block__main">Anti Scratch coated visor </p>

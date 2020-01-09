@@ -2,6 +2,31 @@ html {
     scroll-behavior: smooth;
 }
 
+@font-face {
+    font-family: 'Russo One';
+    src: url('./Fonts/RussoOne-Regular.ttf');
+}
+
+@font-face {
+    font-family: "Kaushan Script";
+    src: url('./Fonts/KaushanScript-Regular.ttf');
+}
+
+@font-face {
+    font-family: "Muller Light";
+    src: url('./Fonts/Fontfabric - MullerLight.otf');
+}
+
+@font-face {
+    font-family: 'Muller Bold';
+    src: url('./Fonts/Fontfabric - MullerBold.otf');
+}
+
+@font-face {
+    font-family: ' Muller Regular';
+    src: url('./Fonts/Fontfabric - MullerRegular.otf');
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -9,35 +34,16 @@ body {
     background-color: #1f2326;
     text-decoration: none;
     outline: 0;
-    @font-face {
-        font-family: 'Russo One';
-        src: url('../Fonts/RussoOne-Regular.ttf');
-    }
-    @font-face {
-        font-family: "Kaushan Script";
-        src: url('../Fonts/KaushanScript-Regular.ttf');
-    }
-    @font-face {
-        font-family: "Muller Light";
-        src: url('../Fonts/Fontfabric - MullerLight.otf');
-    }
-    @font-face {
-        font-family: 'Muller Bold';
-        src: url('../Fonts/Fontfabric - MullerBold.otf');
-    }
-    @font-face {
-        font-family: ' Muller Regular';
-        src: url('../Fonts/Fontfabric - MullerRegular.otf');
-    }
     .hide {
-        display: none;
+        opacity: 0;
     }
     .container {
+        position: relative;
+        margin: 0 auto;
         width: 100%;
-        height: 100vh;
+        padding-left: 45px;
+        padding-right: 45px;
         max-width: 1200px;
-        padding-left: 40px;
-        padding-right: 40px;
     }
     .arrow {
         position: fixed;
@@ -51,31 +57,33 @@ body {
         opacity: 1;
     }
     .header__wrapper {
-        width: 100%;
         display: flex;
         justify-content: space-around;
     }
     // .arrow-r {}
     .header {
         display: flex;
+        justify-content: center;
         margin-top: 100px;
-        background-image: url("../img/header-fon.png");
+        background: url("../img/header-fon.png") no-repeat;
         width: 100%;
         height: 100vh;
+        background-size: cover;
         &__logo-wrapper {
             display: flex;
             justify-content: center;
             align-items: center;
             max-height: 200px;
             position: absolute;
-            top: 30px;
-            left: 550px;
+            top: -71px;
+            left: 500px;
         }
         &__block {
             display: flex;
             flex-direction: column;
+            align-items: center;
             margin-top: 120px;
-            max-width: 425px;
+            max-width: 422px;
             text-align: left;
             &__heading {
                 color: #dc1a1a;
@@ -103,32 +111,31 @@ body {
                 margin-bottom: 91px;
             }
             &__button {
-                position: relative;
+                z-index: 4;
+                margin-top: 40px;
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 height: 57px;
                 width: 223px;
                 border: 4px solid #dc1a1a;
-                transform: skewX(-28deg);
+                transform: skewX(-22deg);
                 background-color: transparent;
                 color: #fff;
                 font-size: 11px;
                 letter-spacing: 2px;
                 text-transform: uppercase;
-                cursor: pointer;
-                animation: color;
                 transition: background-size .15s;
-                 :before {
-                    content: "";
-                    height: 57px;
-                    width: 50px;
-                    transform: skewX(-28deg);
-                    background-color: white;
-                    opacity: 0;
-                }
-                 :after {
+                &::before {
+                    content: '';
                     position: absolute;
+                    top: -5px;
+                    right: 238px;
+                    height: 57px;
+                    width: 2px;
+                    background-color: #fff;
+                }
+                &::after {
                     content: '';
                     position: absolute;
                     left: -24px;
@@ -136,16 +143,17 @@ body {
                     height: 57px;
                     width: 2px;
                     background-color: #fff;
-                     :hover {
-                        background-color: #dc1a1a;
-                        opacity: 1;
-                        animation: buttonAfter .2s
-                    }
+                    opacity: 0;
+                }
+                &:hover:after {
+                    background-color: white;
+                    opacity: 1;
+                    animation: buttonAfter .2s
                 }
             }
             &__img {
-                max-width: 623px;
-                max-height: 694px;
+                max-width: 523px;
+                max-height: 594px;
             }
         }
     }
@@ -181,8 +189,8 @@ body {
 .header__customize {
     position: absolute;
     z-index: 2;
-    top: 340px;
-    right: 230px;
+    top: 268px;
+    right: 144px;
     width: 113px;
     height: 113px;
     background-color: #dc1a1a;
@@ -220,7 +228,6 @@ body {
     background: url('../img/circ.png') center center no-repeat;
     background-size: cover;
     transition: transform 1.5s ease-in-out;
-    transition: transform 1.5s ease-in-out
 }
 
 .header__customize:after {
@@ -230,7 +237,7 @@ body {
     left: 42px;
     width: 25px;
     height: 48px;
-    background: url('../img/spray.svg') center center no-repeat;
+    background: url('../img/spray\ .svg') center center no-repeat;
     color: white;
     background-size: cover;
 }
@@ -251,4 +258,10 @@ body {
     100% {
         transform: rotate(0)
     }
+}
+
+.style-color {
+    font-family: "Muller Light";
+    font-weight: 300;
+    letter-spacing: 0.6px;
 }

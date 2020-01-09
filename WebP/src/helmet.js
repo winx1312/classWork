@@ -1,15 +1,11 @@
 const hel = document.querySelector(".const")
+const helmets = document.querySelectorAll(".const__helmet")
+const helmetsI = document.getElementById('helmets')
 window.addEventListener('scroll', function(event) {
-    if (pageYOffset > 1200) {
+    if (pageYOffset > 900) {
         hel.classList.add("visable")
+    } else if (pageYOffset > 1200) {
+        document.getElementById("wrapA").classList.add("glass-animate")
     }
-})
-document.querySelectorAll(".style__opt-wrapper").forEach(i => {
-    i.addEventListener("click", function(event) {
-        hel.classList.add("opac")
-        document.querySelector(" .hel-1").classList.add("helmetA");
-        document.getElementById("v-1").style.opacity = 1;
-    })
-})
 
-document.querySelectorAll("")
+})

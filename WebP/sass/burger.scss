@@ -88,11 +88,9 @@ $var2: #ffffff;
 
 @keyframes side-2 {
     from {
-        -webkit-transform: translate(140%, 10%);
         transform: translate(140%, 10%)
     }
     to {
-        -webkit-transform: translate(0, 0);
         transform: translate(0, 0)
     }
 }
